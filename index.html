@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,10 @@
     <meta name="author" content="MagCure Team">
     <title>MagCure - Revolutionizing Cancer Treatment</title>
     <style>
+        @font-face {
+            font-family: 'Niagara Solid';
+            src: url('NIAGSOL.ttf') format('truetype');
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -16,18 +21,34 @@
             padding: 0;
         }
         header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background-color: #333;
             color: white;
-            padding: 10px 20px;
-            text-align: center;
+            padding: 0 20px;
+            height: 100px;
+        }
+        header img {
+            height: 80px;
+        }
+        header h1 {
+            font-family: 'Niagara Solid', sans-serif;
+            font-size: 48px;
+            margin-left: 10px;
+        }
+        nav {
+            display: flex;
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            margin-left: 15px;
             text-decoration: none;
+            font-size: 18px;
+            line-height: 80px;
         }
         .hero {
-            background-image: url('X03.jpg'); /* Placeholder */
+            background-image: url('X03.jpg'); /* Ensure this image is uploaded */
             background-size: cover;
             background-position: center;
             color: white;
@@ -58,7 +79,10 @@
 </head>
 <body>
     <header>
-        <img src="magcure.png" alt="MagCure Logo" href="/"/>
+        <div style="display: flex; align-items: center;">
+            <img src="magcure.png" alt="MagCure Logo" />
+            <h1>MagCure</h1>
+        </div>
         <nav>
             <a href="#about">About</a>
             <a href="#technology">Technology</a>
@@ -70,7 +94,6 @@
         <h1>Revolutionizing Cancer Treatment with Precision Nanotechnology</h1>
         <p>Non-invasive, targeted solutions for a healthier future.</p>
     </section>
-
 
     <div class="content" id="about">
         <h2>About MagCure</h2>
